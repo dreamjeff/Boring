@@ -68,10 +68,10 @@ public class HeapSort implements Go {
 			int leftChild = leftChild(index);
 			int rightChild = rightChild(index);
 			int minIndex = index;
-			if(leftChild > 0) {
+			if(leftChild > 0) {//Watch the out of range issue
 				minIndex = heap.get(index) > heap.get(leftChild) ? leftChild : index;
 			}
-			if(rightChild > 0) {
+			if(rightChild > 0) {//Watch the out of range issue
 				minIndex = heap.get(minIndex) > heap.get(rightChild) ? rightChild : minIndex;
 			}
 			if(minIndex != index) {
