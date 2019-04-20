@@ -5,7 +5,8 @@ public class Program {
 		//Go go = new HeapSort();
 		//Go go = new BinarySearch();
 		//Go go = new QuickSort();
-		Go go = new MergeSort();
+		//Go go = new MergeSort();
+		Go go = new BucketSort();
 		
 		go.run();
 	}
