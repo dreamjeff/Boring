@@ -1,7 +1,5 @@
 package common;
 
-import java.util.*;
-
 public class QuickSort implements Go {
 
 	@Override
