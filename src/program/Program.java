@@ -2,6 +2,7 @@ package program;
 
 import am.*;
 import common.Go;
+import leetcode.*;
 
 public class Program {
 	public static void main(String[] args) {
@@ -10,7 +11,8 @@ public class Program {
 		//Go go = new QuickSort();
 		//Go go = new MergeSort();
 		//Go go = new BucketSort();
-		Go go = new Sort_Prime_And_Not_Prime_Product();
+		//Go go = new Sort_Prime_And_Not_Prime_Product();
+		Go go = new _0002_Add_Two_Number();
 		
 		
 		go.run();
