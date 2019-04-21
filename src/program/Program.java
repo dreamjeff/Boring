@@ -1,6 +1,7 @@
-package common;
+package program;
 
 import am.*;
+import common.Go;
 
 public class Program {
 	public static void main(String[] args) {
