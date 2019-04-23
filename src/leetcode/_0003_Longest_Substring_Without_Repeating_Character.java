@@ -8,11 +8,11 @@ public class _0003_Longest_Substring_Without_Repeating_Character implements Go {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-
+		
 	}
 
     public int lengthOfLongestSubstring(String s) {
-    	if(s == null || s.length()==0) return 0;
+    	if(s==null || s.length()==0) return 0;
         HashSet<Character> set = new HashSet<>();
     	int l = 0, r = 0, res = Integer.MIN_VALUE;
         while(r < s.length()) {
