@@ -16,5 +16,8 @@ public class Program {
 		Go go = new _0017_Letter_Combinations_of_a_Phone_Number();
 		
 		go.run();
+		
+		char[] c = new char[] {'a', 'b', 'c'};
+		System.out.println(c.toString());
 	}
 }
