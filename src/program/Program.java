@@ -17,7 +17,6 @@ public class Program {
 		
 		go.run();
 		
-		char[] c = new char[] {'a', 'b', 'c'};
-		System.out.println(c.toString());
+		System.out.println(11/4);
 	}
 }
