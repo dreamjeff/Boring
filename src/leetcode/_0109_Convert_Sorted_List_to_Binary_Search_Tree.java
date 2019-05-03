@@ -36,15 +36,15 @@ public class _0109_Convert_Sorted_List_to_Binary_Search_Tree implements Go {
             head = head.next;
         }
         if(i==0) return null;
-        return build(map, 0, i-1);
+        return build2(map, 0, i-1);
     }
     
     private TreeNode build2(HashMap<Integer, Integer> map, int l, int r){
         if(l>r) return null;
         int m = l+(r-l)/2;
         TreeNode node = new TreeNode(map.get(m));
-        node.left = build(map, l, m-1);
-        node.right = build(map, m+1, r);
+        node.left = build2(map, l, m-1);
+        node.right = build2(map, m+1, r);
         return node;
     }
 }
