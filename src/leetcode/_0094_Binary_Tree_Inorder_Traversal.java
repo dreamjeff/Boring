@@ -23,4 +23,23 @@ public class _0094_Binary_Tree_Inorder_Traversal implements Go {
         res.add(root.val);
         dfs(root.right, res);
     }
+    
+    // how to convert to preorder and postorder
+    public List<Integer> inorderTraversal2(TreeNode root) {
+        List<Integer> res = new LinkedList<>();
+        if(root==null) return res;
+        Stack<TreeNode> st = new Stack<>();
+        TreeNode p = root;
+        while(!st.isEmpty() || p!=null){
+            if(p!=null){
+                st.push(p);
+                p = p.left;
+            }else{
+                p = st.pop();
+                res.add(p.val);
+                p = p.right;
+            }
+        }
+        return res;
+    }
 }
