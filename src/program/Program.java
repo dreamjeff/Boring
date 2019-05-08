@@ -14,8 +14,7 @@ public class Program {
 		//Go go = new Sort_Prime_And_Not_Prime_Product();
 		//Go go = new _0002_Add_Two_Number();
 		String ss = "01";
-		String[] s = ss.split("\\.");
-		System.out.println(Integer.valueOf(s[0]));
+		System.out.println(ss.substring(0,ss.length()));
 		
 		System.out.println();
 	}
