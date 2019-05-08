@@ -13,10 +13,10 @@ public class Program {
 		//Go go = new BucketSort();
 		//Go go = new Sort_Prime_And_Not_Prime_Product();
 		//Go go = new _0002_Add_Two_Number();
-		Go go = new _0017_Letter_Combinations_of_a_Phone_Number();
+		String ss = "01";
+		String[] s = ss.split("\\.");
+		System.out.println(Integer.valueOf(s[0]));
 		
-		go.run();
-		
-		System.out.println(11/4);
+		System.out.println();
 	}
 }
