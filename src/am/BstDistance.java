@@ -6,6 +6,14 @@ import common.Go;
 
 public class BstDistance implements Go{
 	
+//	给一个无序integer array，要求用insert的方法建一个BST，然后给出其
+//
+//	中两个值在树上的距离，若是有不在树里的，返回-1
+//	解题思路参考：
+//	千万注意这是一道大题！坑：首先给的integer array可能是有序的，就不需要排序了，否则可能会有case不过。
+//	再次是BST，不要按照BinaryTree搞，会超时导致case不过。解题思路，先建BST，再做LCA，然后算两点和root的距离（level）。 
+//	geekforgeek上的解释：http://www.geeksforgeeks.org/find-distance-two-given-nodes/
+	
 	private class TreeNode{
 		public int val;
 		public TreeNode left;
