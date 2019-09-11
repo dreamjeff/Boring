@@ -21,7 +21,7 @@ public class CutTreeGolf implements Go {
 //
 //	解题思路参考：
 //	BFS来按照砍树顺序寻找最优路径。坑：先要找到所有树（>1的点），然后按照顺序做BFS。可以把树放到TreeMap里面（排序的HashMap）。抽到的题目可能起始点是0.0也可能是四个角，没关系把起始点都放入queue中去做BFS即可。再有注意终点可能会是最后一棵树，也可能是最优路径走出来（从最后一棵数到任意四个点的最短路径）。参考答案是从四个点开始走最后走出来的解法。
-//	
+//	https://yidongzhang.gitbooks.io/-oa/golf-event.html
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
