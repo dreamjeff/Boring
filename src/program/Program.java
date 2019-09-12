@@ -13,8 +13,8 @@ public class Program {
 		//Go go = new BucketSort();
 		//Go go = new Sort_Prime_And_Not_Prime_Product();
 		//Go go = new _0002_Add_Two_Number();
-		String ss = "1";
-		System.out.println(ss.substring(1,ss.length()));
+		Go go = new CutTreeGolf();
+		go.run();
 		
 		System.out.println();
 	}
