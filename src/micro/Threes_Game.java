@@ -1,10 +1,8 @@
 package micro;
 
-<<<<<<< HEAD
-=======
+
 import java.util.*;
 
->>>>>>> 6e4d6fbe150da46c2fc13edcca946d068a4cf80b
 import common.Go;
 
 public class Threes_Game implements Go {
@@ -12,12 +10,6 @@ public class Threes_Game implements Go {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-
-<<<<<<< HEAD
-	}
-
-}
-=======
 		Threes_Game game = new Threes_Game(4);
 		game.display();
 		while(!game.isFull()) {
