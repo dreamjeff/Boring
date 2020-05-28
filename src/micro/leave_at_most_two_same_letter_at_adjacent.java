@@ -8,11 +8,11 @@ public class leave_at_most_two_same_letter_at_adjacent implements Go {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-//		ÊäÈë×Ö·û´®, ·µ»Ø´¦ÀíºóµÄ×Ö·û´®£¬ÀïÃæÖØ¸´µÄÏàÁÚ×Ö·û²»³¬¹ý2
-//		Ö»ÓÐÐ¡Ð´
+//		ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ø´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2
+//		Ö»ï¿½ï¿½Ð¡Ð´
 //		input: xxxbcddde
 //		output: xxbcdde
-		System.out.print(work("aaa"));
+		System.out.print(work("xxxbcddde"));
 	}
 	
 	private String work(String s) {

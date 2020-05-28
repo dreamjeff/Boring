@@ -8,9 +8,9 @@ public class Longest_Semi_Alternating_Substring implements Go {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-//		 ¸øÒ»¸ö×Ö·û´®£¬ÒªÇóÉ¾¼õ×îÉÙµÄ×Ö·û£¬Ê¹µÃ×Ö·û´®ÖÐ²»»á³öÏÖÁ¬ÐøÈý¸öÒ»ÑùµÄ×Ö·û£¬±ÈÈç
-//		 bbbbbbaccccc ÒªÎª bbacc¡£
-		System.out.print(work("abaaaa"));
+//		 ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½Ùµï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//		 bbbbbbaccccc ÒªÎª bbaccï¿½ï¿½
+		System.out.print(work("abaabbbaa"));
 	}
 
 	private String work(String s) {

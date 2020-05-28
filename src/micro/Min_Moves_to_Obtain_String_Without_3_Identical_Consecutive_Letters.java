@@ -1,3 +1,4 @@
+
 package micro;
 
 import common.Go;

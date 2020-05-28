@@ -7,10 +7,20 @@ public class Largest_alphabetically_order implements Go {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-//		1. Ö»ÓĞ´óĞ´ºÍĞ¡Ğ´×ÖÄ¸×é³É£¬ÒªÇó·µ»ØÒ»¸ö´óĞ´×ÖÄ¸£¬which is the largest alphabetically order
-//		and occurs both in lower and upper cases in the string¡£
-//		±ÈÈç"aAbxeEX"£¬A£¬E£¬ X ¶¼·ûºÏÌâÒâ£¬µ« X µÄ×ÖÄ¸Ğò±È½Ï´ó£¬ËùÒÔ·µ»Ø X¡£
-
+//		1. Ö»ï¿½Ğ´ï¿½Ğ´ï¿½ï¿½Ğ¡Ğ´ï¿½ï¿½Ä¸ï¿½ï¿½É£ï¿½Òªï¿½ó·µ»ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½Ä¸ï¿½ï¿½which is the largest alphabetically order
+//		and occurs both in lower and upper cases in the stringï¿½ï¿½
+//		ï¿½ï¿½ï¿½ï¿½"aAbxeEX"ï¿½ï¿½Aï¿½ï¿½Eï¿½ï¿½ X ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ X ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½È½Ï´ï¿½ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ Xï¿½ï¿½
+		
+//Given a string containing lowercase and uppercase letters.sort it in such a manner such that the uppercase and lowercase letter comes in an alternate manner but in sorted way.
+//		Input : bAwutndekWEdkd
+//		Output :AbEdWddekkntuw
+//		Explanation:
+//		Here we can see that letter â€˜Aâ€™, â€™Eâ€™, â€™Wâ€™ are sorted 
+//		as well as letters â€œb, d, d, d, e, k, k, n, t, u, wâ€ are sorted 
+//		but both appears alternately in the string as far as possible.
+//
+//		Input :abbfDDhGFBvdFDGBNDasZVDFjkb
+//		Output :BaBaDbDbDbDdDfFhFjFkGsGvNVZ
 		System.out.print(work("aAbxeEX"));
 	}
 
@@ -33,4 +43,55 @@ public class Largest_alphabetically_order implements Go {
 		}
 		return res;
 	}
+	
+	private final static int MAX = 100; 
+	
+	public static String alternateSort(String s1) 
+	{ 
+	    int n = s1.length(); 
+	  
+	    char[] s = s1.toCharArray(); 
+	  
+	    // Count occurrences of  
+	    // individual lower case and 
+	    // upper case characters 
+	    int[] lCount = new int[MAX]; 
+	    int[] uCount = new int[MAX]; 
+	  
+	    for (int i = 0; i < n; i++) { 
+	  
+	        if (Character.isUpperCase(s[i])) 
+	            uCount[s[i] - 'A']++; 
+	        else
+	            lCount[s[i] - 'a']++; 
+	    } 
+	  
+	    // Traverse through count 
+	    // arrays and one by one 
+	    // pick characters.  
+	    // Below loop takes O(n) time 
+	    // considering the MAX is constant. 
+	    int i = 0, j = 0, k = 0; 
+	    while (k < n)  
+	    { 
+	  
+	        while (i < MAX && uCount[i] == 0) 
+	                i++; 
+	  
+	        if (i < MAX) { 
+	                s[k++] = (char)('A' + i); 
+	                uCount[i]--; 
+	            } 
+	  
+	        while (j < MAX && lCount[j] == 0) 
+	                j++; 
+	  
+	        if (j < MAX) { 
+	                s[k++] = (char)('a' + j); 
+	                lCount[j]--; 
+	            } 
+	        } 
+	          
+	        return (new String(s)); 
+	    } 
 }

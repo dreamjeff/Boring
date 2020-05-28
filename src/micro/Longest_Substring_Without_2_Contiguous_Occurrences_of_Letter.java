@@ -15,7 +15,7 @@ public class Longest_Substring_Without_2_Contiguous_Occurrences_of_Letter implem
 //				
 //				Input: "aabbaabbaabbaa"
 //					Output: "aabbaabbaabbaa"
-		System.out.print(work("xxxtxxx"));
+		System.out.print(work("aabbaaaaabb"));
 	}
 
 	private String work(String s) {

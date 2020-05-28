@@ -7,15 +7,15 @@ public class Minimize_String_after_remove_a_charcter implements Go {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-//		3. ¸ø¶¨Ò»¸ö string, ÎÊÈçºÎÈ¥µôÒ»¸ö character£¬Ê¹µÃÊ£ÏÂµÄ string ×îÐ¡¡£
-//		±ÈÈç¸ø³ö acd£¬È¥µô d ·µ»ØÊ£ÏÂµÄ ac ¾ÍÊÇÕýÈ·µÄ¡£ÒòÎªÈ¥µô c ÁôÏÂ ad£¬È¥µô a ÁôÏÂ cd£¬¶¼±È ac Òª
-//		´ó¡£
-//		±ÈÈç¸ø³ö hot£¬È¥µô t ·µ»ØÊ£ÏÂµÄ ho ¾ÍÊÇÕýÈ·µÄ¡£ÒòÎªÈ¥µô h ÁôÏÂ ot£¬È¥µô o ÁôÏÂ ht£¬¶¼±È ho Òª
-//		´ó¡£
-//		±ÈÈç¸ø³ö aaaa£¬Ö»Òª·µ»Ø aaa ¾ÍÊÇÕýÈ·µÄ
+//		3. ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ string, ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½Ò»ï¿½ï¿½ characterï¿½ï¿½Ê¹ï¿½ï¿½Ê£ï¿½Âµï¿½ string ï¿½ï¿½Ð¡ï¿½ï¿½
+//		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ acdï¿½ï¿½È¥ï¿½ï¿½ d ï¿½ï¿½ï¿½ï¿½Ê£ï¿½Âµï¿½ ac ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½Ä¡ï¿½ï¿½ï¿½ÎªÈ¥ï¿½ï¿½ c ï¿½ï¿½ï¿½ï¿½ adï¿½ï¿½È¥ï¿½ï¿½ a ï¿½ï¿½ï¿½ï¿½ cdï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ac Òª
+//		ï¿½ï¿½
+//		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ hotï¿½ï¿½È¥ï¿½ï¿½ t ï¿½ï¿½ï¿½ï¿½Ê£ï¿½Âµï¿½ ho ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½Ä¡ï¿½ï¿½ï¿½ÎªÈ¥ï¿½ï¿½ h ï¿½ï¿½ï¿½ï¿½ otï¿½ï¿½È¥ï¿½ï¿½ o ï¿½ï¿½ï¿½ï¿½ htï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ho Òª
+//		ï¿½ï¿½
+//		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ aaaaï¿½ï¿½Ö»Òªï¿½ï¿½ï¿½ï¿½ aaa ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½
 		//Lexicographically Smallest String
 		//https://leetcode.com/discuss/interview-question/366869/
-		System.out.print(work("aaaa"));
+		System.out.print(work("zabcde"));
 	}
 
 	private String work(String s) {
@@ -28,7 +28,7 @@ public class Minimize_String_after_remove_a_charcter implements Go {
 		if(i==s.length()-1) {
 			return s.substring(0, i);
 		}else {
-			return s.substring(0, i-1) + s.substring(i+1, s.length());
+			return s.substring(0, i) + s.substring(i+1, s.length());
 		}
 	}
 }
