@@ -1,3 +1,4 @@
+package leetcode;
 import common.Go;
 
 public class _0376_Wiggle_Subsequence implements Go {
