@@ -12,7 +12,7 @@ public class Min_Moves_to_Obtain_String_Without_3_Identical_Consecutive_Letters 
 		//baaaaa
 		//baaabbaabbba
 		//baabab
-		System.out.print(work("eeeeffff"));
+		System.out.print(work("baaaaa"));
 	}
 
 	private int work(String s) {

@@ -1,5 +1,8 @@
 package leetcode;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 import common.Go;
 
 public class _0378_Kth_Smallest_Element_in_a_Sorted_Matrix implements Go {
@@ -10,7 +13,6 @@ public class _0378_Kth_Smallest_Element_in_a_Sorted_Matrix implements Go {
 
 	}
 
-	class Solution {
 	    public int kthSmallest(int[][] matrix, int k) {
 	        int left=matrix[0][0], right=matrix[matrix.length-1][matrix[0].length-1];
 	        while(left<right){
@@ -34,4 +36,21 @@ public class _0378_Kth_Smallest_Element_in_a_Sorted_Matrix implements Go {
 	        }
 	        return res;
 	    }
+	    
+	    public int kthSmallest2(int[][] matrix, int k) {
+	        PriorityQueue<Integer> queue = new PriorityQueue<>(new MyCompare());
+	        for(int i=0; i<matrix.length; i++){
+	            for(int j=0; j<matrix[0].length; j++){
+	                queue.add(matrix[i][j]);
+	                if(queue.size()>k) queue.poll();
+	            }
+	        }
+	        return queue.poll();
+	    }
+}
+
+class MyCompare implements Comparator<Integer>{
+    public int compare(Integer i, Integer j){
+        return j-i;
+    }
 }
